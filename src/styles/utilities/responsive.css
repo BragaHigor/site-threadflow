@@ -1,0 +1,481 @@
+@media (max-width: 64rem) {
+  .hero__layout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(20rem, 0.85fr);
+    gap: 1rem;
+  }
+
+  .hero__title {
+    font-size: clamp(3rem, 5.8vw, 3.7rem);
+  }
+
+  .product-carousel {
+    --carousel-card-size: 22rem;
+    --carousel-card-half: 11rem;
+    --carousel-near-offset: 9rem;
+    --carousel-far-offset: 10.75rem;
+    height: 34.5rem;
+  }
+
+  .product-carousel__viewport {
+    height: 31.5rem;
+  }
+
+  .problem__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .feature-card:last-child > p {
+    min-height: auto;
+  }
+
+  .resources-browser {
+    grid-template-columns: 13.5rem minmax(0, 1fr);
+  }
+
+  .resources-tab {
+    padding-inline: 0.75rem;
+  }
+
+  .resource-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+
+  .security__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .security-diagram {
+    width: min(44rem, 100%);
+    margin-inline: auto;
+  }
+
+  .faq__layout {
+    gap: 3.5rem;
+  }
+
+  .site-footer__main {
+    grid-template-columns: minmax(12rem, 1fr) auto;
+  }
+
+  .site-footer__tagline {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    text-align: left;
+  }
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --page-gutter: 1.25rem;
+    --section-space: 5.5rem;
+    --header-height: 5.5rem;
+  }
+
+  .container--nav {
+    width: min(calc(100% - 1.5rem), var(--container));
+  }
+
+  .navbar {
+    margin-top: 0.75rem;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    justify-content: stretch;
+    justify-items: center;
+    width: 100%;
+    padding: 1rem;
+    visibility: hidden;
+    border: 1px solid var(--border-dark);
+    border-radius: 1rem;
+    opacity: 0;
+    background: rgba(18, 23, 30, 0.96);
+    box-shadow: var(--shadow-dark);
+    transform: translateY(-0.5rem);
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+  }
+
+  .navbar__menu.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar__links {
+    position: static;
+    display: grid;
+    justify-items: stretch;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+    transform: none;
+  }
+
+  .navbar__links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.85rem 0.5rem;
+    border-bottom: 1px solid rgba(226, 236, 250, 0.08);
+  }
+
+  .navbar__menu .button {
+    justify-self: center;
+    width: min(100%, 12rem);
+    margin-top: 0.5rem;
+  }
+
+  .reading-progress {
+    margin-top: 0.45rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 8.5rem;
+  }
+
+  .hero__layout,
+  .solution__heading {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero__content {
+    width: min(46rem, 100%);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero__description {
+    margin-inline: auto;
+  }
+
+  .hero__actions,
+  .hero__trust {
+    justify-content: center;
+  }
+
+  .hero__trust {
+    margin-inline: auto;
+  }
+
+  .product-carousel {
+    --carousel-card-size: 22rem;
+    --carousel-card-half: 11rem;
+    --carousel-near-offset: 9rem;
+    --carousel-far-offset: 12rem;
+    width: min(42rem, 100%);
+    height: 34.5rem;
+    margin: 1.5rem auto -1rem;
+  }
+
+  .product-carousel__viewport {
+    height: 31.5rem;
+  }
+
+  .problem__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-card:last-child {
+    grid-column: auto;
+  }
+
+  .feature-card > p {
+    min-height: auto;
+  }
+
+  .problem__cost {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+
+  .problem__cost strong {
+    text-align: left;
+  }
+
+  .solution__comparison {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 2.75rem;
+  }
+
+  .solution__transition {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .solution__transition span {
+    writing-mode: initial;
+    transform: none;
+  }
+
+  .solution__transition i {
+    transform: rotate(90deg);
+  }
+
+  .resources-browser {
+    display: block;
+    min-height: auto;
+  }
+
+  .resources-tabs {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.8rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(226, 236, 250, 0.1);
+    scrollbar-width: thin;
+  }
+
+  .resources-tab {
+    min-width: max-content;
+    min-height: 3.25rem;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .resource-panel,
+  .resource-panel.is-active {
+    min-height: auto;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem;
+  }
+
+  .resource-panel__copy h3 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .resources-support {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .faq__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .faq .section-heading {
+    position: static;
+  }
+
+  .support-card--context {
+    grid-row: auto;
+  }
+
+  .security-diagram {
+    min-height: 28rem;
+  }
+
+  .site-footer__main {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    text-align: center;
+  }
+
+  .site-footer__tagline {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+  }
+
+  .brand--footer {
+    justify-items: center;
+  }
+
+  .site-footer nav {
+    justify-content: center;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-footer__legal {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 35rem) {
+  .hero__title-break {
+    display: none;
+  }
+
+  .hero__title {
+    margin-top: 1.25rem;
+    font-size: clamp(2.35rem, 11vw, 3rem);
+    line-height: 1.04;
+  }
+
+  .hero__description {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+  }
+
+  .hero__actions,
+  .pilot__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .button,
+  .pilot__actions .button {
+    width: 100%;
+  }
+
+  .hero__trust {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .hero__trust i {
+    display: none;
+  }
+
+  .product-carousel {
+    --carousel-card-size: min(18rem, 82vw);
+    --carousel-card-half: min(9rem, 41vw);
+    --carousel-near-offset: 6.5rem;
+    --carousel-far-offset: 8rem;
+    height: 30rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .product-carousel__viewport {
+    height: 26.5rem;
+  }
+
+  .product-carousel__caption {
+    gap: 0.55rem;
+    width: min(100%, 17rem);
+    margin-top: 0.75rem;
+    padding-inline: 0.25rem;
+    font-size: 0.78rem;
+  }
+
+  .product-carousel__caption span {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0.6rem;
+  }
+
+  .problem__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .comparison-card {
+    min-height: auto;
+    padding: 1.6rem;
+  }
+
+  .resource-panel,
+  .resource-panel.is-active {
+    padding: 1.4rem;
+  }
+
+  .resource-demo {
+    padding: 1rem;
+  }
+
+  .resource-demo--board {
+    gap: 0.4rem;
+  }
+
+  .resource-demo--board > div {
+    min-height: 10rem;
+    padding: 0.5rem;
+  }
+
+  .resource-demo--board i {
+    height: 3.25rem;
+  }
+
+  .resource-demo--sync,
+  .resource-demo--reaction {
+    gap: 0.45rem;
+  }
+
+  .resource-demo--sync > div {
+    min-height: 4.5rem;
+    font-size: 0.72rem;
+  }
+
+  .resource-demo--reaction > div {
+    min-height: 7.5rem;
+    padding: 0.6rem;
+  }
+
+  .resource-demo--reaction strong {
+    font-size: 0.75rem;
+  }
+
+  .security-diagram {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "core" "support" "product" "implementation";
+    gap: 0.75rem;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .security-diagram__connections {
+    display: none;
+  }
+
+  .access-core {
+    position: static;
+    grid-area: core;
+    width: 100%;
+    height: auto;
+    min-height: 7.5rem;
+    transform: none;
+  }
+
+  .workspace-card {
+    width: 100%;
+    min-height: 7.5rem;
+  }
+
+  .workspace-card--support { grid-area: support; }
+  .workspace-card--product { grid-area: product; }
+  .workspace-card--implementation { grid-area: implementation; grid-column: auto; }
+
+  .workspace-card > span {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .faq-item button {
+    gap: 1rem;
+    padding-block: 1.35rem;
+  }
+
+  .faq-item__answer {
+    padding-right: 0;
+  }
+
+  .pilot__benefits {
+    display: grid;
+  }
+
+  .site-footer nav {
+    gap: 1rem 1.25rem;
+  }
+}

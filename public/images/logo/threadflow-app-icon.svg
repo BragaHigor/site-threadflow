@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Ícone do aplicativo ThreadFlow</title>
+  <desc id="desc">Símbolo Orbit Check sobre um quadrado azul-marinho.</desc>
+  <rect width="512" height="512" rx="112" fill="#0B1020"/>
+  <path d="M214 114C323 107 397 181 392 289" fill="none" stroke="#5865F2" stroke-width="25" stroke-linecap="round"/>
+  <path d="M298 400C189 407 116 332 121 224" fill="none" stroke="#20C7B5" stroke-width="25" stroke-linecap="round"/>
+  <path d="M102 83H205C224 83 239 98 239 117V149C239 168 224 183 205 183H178L154 202V183H102C83 183 68 168 68 149V117C68 98 83 83 102 83Z" fill="#5865F2"/>
+  <path d="M308 329H411C430 329 445 344 445 363V395C445 414 430 429 411 429H359L335 448V429H308C289 429 274 414 274 395V363C274 344 289 329 308 329Z" fill="#20C7B5"/>
+  <path d="M108 117H199M108 149H178M314 363H405M314 395H384" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="72" fill="#FFFFFF"/>
+  <path d="M219 257L245 283L296 229" fill="none" stroke="#0B1020" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

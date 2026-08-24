@@ -1,0 +1,33 @@
+:root {
+  --color-bg: #0e1116;
+  --color-bg-deep: #0b0e13;
+  --color-surface: #151a22;
+  --color-light: #f5f7fb;
+  --color-text: #e8edf5;
+  --color-text-strong: #f4f7fc;
+  --color-text-muted: rgba(232, 237, 245, 0.6);
+  --color-ink: #0f1720;
+  --color-ink-muted: #55616f;
+  --color-primary: #2f7cf6;
+  --color-primary-deep: #1d5bc4;
+  --color-primary-light: #93baf9;
+  --color-success: #2fa06b;
+  --color-warning: #d99425;
+  --color-danger: #d5493c;
+  --border-dark: rgba(226, 236, 250, 0.12);
+  --border-light: #e2e8f0;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Sora", var(--font-body);
+  --container: 1240px;
+  --page-gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-space: clamp(5.5rem, 9vw, 8rem);
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 1.875rem;
+  --ease-out: cubic-bezier(0.2, 0.75, 0.25, 1);
+  --shadow-dark: 0 24px 60px rgba(4, 7, 12, 0.5);
+  --shadow-light: 0 36px 80px rgba(15, 35, 70, 0.15);
+  --header-height: 6.5rem;
+}
+

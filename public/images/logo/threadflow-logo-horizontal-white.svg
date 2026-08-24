@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Logo horizontal branco ThreadFlow</title>
+  <desc id="desc">Versão clara do logo Orbit Check para fundos escuros.</desc>
+  <g transform="translate(20 10) scale(.586)">
+    <path d="M210 86C337 78 424 165 418 292" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+    <path d="M302 426C174 434 88 346 94 218" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round"/>
+    <path d="M78 52H208C229 52 246 69 246 90V134C246 155 229 172 208 172H174L144 196V172H78C57 172 40 155 40 134V90C40 69 57 52 78 52Z" fill="#FFFFFF"/>
+    <path d="M304 340H434C455 340 472 357 472 378V422C472 443 455 460 434 460H368L338 484V460H304C283 460 266 443 266 422V378C266 357 283 340 304 340Z" fill="#FFFFFF"/>
+    <path d="M86 94H194M86 130H170M312 382H420M312 418H396" fill="none" stroke="#0B1020" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="256" cy="256" r="78" fill="#FFFFFF"/>
+    <path d="M216 258L244 286L300 226" fill="none" stroke="#0B1020" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="350" y="211" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="142" font-weight="750" letter-spacing="-8">ThreadFlow</text>
+</svg>

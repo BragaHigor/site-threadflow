@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "../styles/core/tokens.css";
+@import "../styles/core/reset.css";
+@import "../styles/core/base.css";
+@import "../styles/utilities/animations.css";
+@import "../styles/components/navigation.css";
+@import "../styles/components/ui.css";
+@import "../styles/sections/hero.css";
+@import "../styles/sections/content.css";
+@import "../styles/utilities/responsive.css";
+
+@theme inline {
+  --color-threadflow-bg: var(--color-bg);
+  --color-threadflow-deep: var(--color-bg-deep);
+  --color-threadflow-surface: var(--color-surface);
+  --color-threadflow-primary: var(--color-primary);
+  --color-threadflow-success: var(--color-success);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-sora);
+}
+
+:root {
+  --font-body: var(--font-inter), "Segoe UI", system-ui, sans-serif;
+  --font-display: var(--font-sora), var(--font-body);
+}

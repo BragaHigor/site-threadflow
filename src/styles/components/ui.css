@@ -1,0 +1,183 @@
+.button {
+  display: inline-flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding-inline: 1.45rem;
+  border: 1px solid transparent;
+  border-radius: 0.9rem;
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--small {
+  min-height: 2.5rem;
+  padding-inline: 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.button--primary {
+  border-color: rgba(147, 186, 249, 0.42);
+  color: #f6faff;
+  background: linear-gradient(180deg, #3b85f8, var(--color-primary-deep));
+  box-shadow: 0 16px 38px rgba(20, 62, 140, 0.44), inset 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.button--light {
+  color: #0d1319;
+  background: linear-gradient(180deg, #fff, #e6ecf6);
+  box-shadow: 0 8px 22px rgba(4, 7, 12, 0.4), inset 0 1px white;
+}
+
+.button--ghost {
+  border-color: rgba(226, 236, 250, 0.16);
+  color: var(--color-text);
+  background: rgba(226, 236, 250, 0.06);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.eyebrow {
+  color: var(--color-primary-light);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.section--light .eyebrow {
+  color: var(--color-primary-deep);
+}
+
+.eyebrow--pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.45rem 0.85rem 0.45rem 0.65rem;
+  border: 1px solid var(--border-dark);
+  border-radius: 999px;
+  color: rgba(232, 237, 245, 0.76);
+  background: rgba(24, 30, 39, 0.6);
+  backdrop-filter: blur(18px);
+}
+
+.status-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--color-success);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.section-heading {
+  max-width: 45rem;
+}
+
+.section-heading--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-heading h2,
+.solution__heading h2,
+.pilot h2 {
+  margin-top: 1.1rem;
+  color: var(--color-text-strong);
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.section-heading > p,
+.solution__heading > p {
+  margin-top: 1rem;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.glass-card {
+  border: 1px solid var(--border-dark);
+  background: var(--color-surface);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
+}
+
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-card {
+    background: rgba(21, 26, 34, 0.66);
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    backdrop-filter: blur(22px) saturate(160%);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-card,
+  .navbar,
+  .button--ghost,
+  .eyebrow--pill {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .glass-card {
+    background: var(--color-surface);
+  }
+}
+
+.tag-row,
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.tag-row {
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  color: rgba(232, 237, 245, 0.68);
+  background: rgba(226, 236, 250, 0.08);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.tag--danger { color: #f0a79f; background: rgba(213, 73, 60, 0.18); }
+.tag--success { color: #69b78f; background: rgba(47, 160, 107, 0.15); }
+.tag--info { color: var(--color-primary-deep); background: rgba(47, 124, 246, 0.12); }
+
+.avatar {
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  color: #eaf2ff;
+  background: linear-gradient(180deg, #3b85f8, var(--color-primary-deep));
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+[data-reveal] {
+  transition: opacity 780ms var(--ease-out), transform 780ms var(--ease-out);
+}
+
+[data-reveal].is-pending {
+  opacity: 0;
+  transform: translate3d(0, 1.625rem, 0);
+}

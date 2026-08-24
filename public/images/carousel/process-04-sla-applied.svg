@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="42 42 636 636" role="img" aria-labelledby="title desc">
+  <title id="title">SLA aplicado ao card</title>
+  <desc id="desc">Simulação de um card do ThreadFlow exibindo prioridade urgente e prazo de SLA.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17243A"/><stop offset="1" stop-color="#0A1019"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#02060C" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="720" height="720" fill="url(#bg)"/>
+  <g>
+    <rect x="42" y="48" width="636" height="624" rx="30" fill="#F3F6FA"/>
+    <rect x="42" y="48" width="636" height="76" rx="30" fill="#FFF"/>
+    <rect x="42" y="96" width="636" height="28" fill="#FFF"/>
+    <circle cx="82" cy="86" r="18" fill="#13213A"/>
+    <path d="M74 81h16M74 88h10" stroke="#58D5C1" stroke-width="3" stroke-linecap="round"/>
+    <text x="112" y="93" fill="#10192A" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">ThreadFlow</text>
+  </g>
+  <text x="70" y="164" fill="#10192A" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700">Time Dev</text>
+  <rect x="70" y="184" width="164" height="30" rx="10" fill="#E9F8F1" stroke="#C9E9D9"/>
+  <circle cx="87" cy="199" r="5" fill="#2FA06B"/>
+  <text x="100" y="204" fill="#27865B" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700">SLA MONITORADO</text>
+  <rect x="66" y="236" width="588" height="390" rx="22" fill="#E8EDF4" stroke="#D7DFEA"/>
+  <circle cx="92" cy="267" r="5" fill="#64748B"/>
+  <text x="108" y="273" fill="#223047" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">ABERTO</text>
+  <g>
+    <rect x="92" y="298" width="536" height="288" rx="22" fill="#FFF" stroke="#5D86F7" stroke-width="2"/>
+    <rect x="116" y="320" width="72" height="26" rx="9" fill="#FFE8E5"/>
+    <text x="130" y="338" fill="#C83D32" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700">URGENTE</text>
+    <text x="116" y="382" fill="#142036" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700">A integração falhou novamente</text>
+    <text x="116" y="411" fill="#6F7E91" font-family="Inter,Arial,sans-serif" font-size="13">Google Chat · 2 respostas · Higor Braga</text>
+    <rect x="116" y="438" width="488" height="91" rx="16" fill="#F4F7FF" stroke="#BCCDF8"/>
+    <circle cx="145" cy="466" r="16" fill="#E1E9FF"/>
+    <path d="M145 455v12l8 5" fill="none" stroke="#5865F2" stroke-width="3" stroke-linecap="round"/>
+    <text x="174" y="461" fill="#58657A" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700">SLA DE RESPOSTA</text>
+    <text x="174" y="487" fill="#172033" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700">Meta de 1 dia</text>
+    <rect x="470" y="453" width="110" height="28" rx="10" fill="#E3EAFF"/>
+    <text x="490" y="472" fill="#315DDD" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="700">NO PRAZO</text>
+    <text x="132" y="513" fill="#315DDD" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">Restam 23h 59m</text>
+    <circle cx="132" cy="555" r="13" fill="#DDE7FF"/><text x="124" y="559" fill="#4567D8" font-family="Inter,Arial,sans-serif" font-size="8" font-weight="700">HB</text>
+    <text x="153" y="560" fill="#536176" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="600">Responsável: Higor Braga</text>
+  </g>
+</svg>
