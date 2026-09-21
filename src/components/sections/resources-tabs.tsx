@@ -7,6 +7,20 @@ import {
   resourceTabs,
 } from "@/data/site-content";
 
+const allCardsSpaces = [
+  { name: "Suporte", tone: "blue" },
+  { name: "Produto", tone: "violet" },
+  { name: "Implantação", tone: "teal" },
+] as const;
+
+const allCardsColumns = [
+  { label: "Sem SLA", tone: "off", cards: ["teal"] },
+  { label: "5 dias", tone: "calm", cards: ["violet", "blue"] },
+  { label: "3 dias", tone: "warning", cards: ["teal"] },
+  { label: "1 dia", tone: "danger", cards: ["blue", "violet", "teal"] },
+  { label: "Concluídos", tone: "done", cards: ["blue"] },
+] as const;
+
 function ResourceDemo({ id }: { id: ResourceTabId }) {
   if (id === "board") {
     return (
@@ -53,6 +67,59 @@ function ResourceDemo({ id }: { id: ResourceTabId }) {
         <strong>
           <i /> Sincronizado
         </strong>
+      </div>
+    );
+  }
+
+  if (id === "keyword") {
+    return (
+      <div className="resource-demo resource-demo--keyword" aria-hidden="true">
+        <div className="resource-demo__demo-head">
+          <span>Palavra-chave do espaço</span>
+          <strong>TF</strong>
+        </div>
+        <ul>
+          <li className="is-match">
+            <span>TF Revisar contrato do cliente</span>
+            <strong>Vira card</strong>
+          </li>
+          <li>
+            <span>Bom dia, time!</span>
+            <strong>Só chat</strong>
+          </li>
+          <li>
+            <span>TFX atualizado no repositório</span>
+            <strong>Só chat</strong>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+
+  if (id === "all-cards") {
+    return (
+      <div className="resource-demo resource-demo--all-cards" aria-hidden="true">
+        <div className="resource-demo__spaces">
+          {allCardsSpaces.map((space) => (
+            <span className={`is-${space.tone}`} key={space.name}>
+              {space.name}
+            </span>
+          ))}
+        </div>
+        <div className="resource-demo__merge">
+          <span>Board geral</span>
+          <i>7</i>
+        </div>
+        <div className="resource-demo__sla-board">
+          {allCardsColumns.map((column) => (
+            <div className={`is-${column.tone}`} key={column.label}>
+              <span>{column.label}</span>
+              {column.cards.map((space, index) => (
+                <i className={`is-${space}`} key={`${space}-${index}`} />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
