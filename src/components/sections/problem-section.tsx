@@ -29,11 +29,23 @@ function ProblemDemo({ variant }: { variant: (typeof problems)[number]["variant"
   if (variant === "thread") {
     return (
       <div className="thread-demo" aria-hidden="true">
-        <i />
-        <i />
-        <i className="is-active" />
-        <i />
-        <span />
+        <p className="is-lost">
+          <i className="avatar">HB</i>
+          <span>Contrato do cliente vence sexta</span>
+          <em>há 2 dias · sem resposta</em>
+        </p>
+        <p>
+          <i className="avatar avatar--green">AT</i>
+          <span>Bom dia, pessoal!</span>
+        </p>
+        <p>
+          <i className="avatar avatar--unknown">CS</i>
+          <span>Alguém tem o link da reunião?</span>
+        </p>
+        <p>
+          <i className="avatar">HB</i>
+          <span>Subi o deploy agora 🚀</span>
+        </p>
       </div>
     );
   }
@@ -41,23 +53,42 @@ function ProblemDemo({ variant }: { variant: (typeof problems)[number]["variant"
   if (variant === "responsibility") {
     return (
       <div className="responsibility-demo" aria-hidden="true">
-        <span>Quem assume?</span>
-        <div className="responsibility-demo__people">
+        <p className="is-question">
           <i className="avatar">HB</i>
+          <span>Quem pode ver o erro do cliente?</span>
+        </p>
+        <p>
           <i className="avatar avatar--green">AT</i>
-          <i className="avatar avatar--unknown">?</i>
-        </div>
+          <span>Acho que a Carla estava vendo…</span>
+        </p>
+        <p>
+          <i className="avatar avatar--unknown">CS</i>
+          <span>Eu não, pergunta pro Tiago.</span>
+        </p>
+        <strong>
+          Responsável: <b>ninguém</b>
+        </strong>
       </div>
     );
   }
 
   return (
     <div className="risk-demo" aria-hidden="true">
-      <span>Prazo</span>
-      <strong>?</strong>
-      <div className="risk-demo__meter">
-        <i />
-      </div>
+      <ol>
+        <li>
+          <b>Dia 1</b>
+          <span>Pedido recebido</span>
+        </li>
+        <li>
+          <b>Dia 3</b>
+          <span>Sem atualização</span>
+        </li>
+        <li className="is-late">
+          <b>Dia 5</b>
+          <span>Cliente escalou</span>
+        </li>
+      </ol>
+      <strong>Prazo nunca foi definido</strong>
     </div>
   );
 }

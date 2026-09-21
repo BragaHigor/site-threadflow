@@ -426,6 +426,33 @@
     font-size: 0.75rem;
   }
 
+  .resource-demo--keyword li {
+    gap: 0.5rem;
+    padding: 0.7rem;
+    font-size: 0.76rem;
+  }
+
+  .resource-demo--keyword li span {
+    white-space: normal;
+  }
+
+  .resource-demo__sla-board {
+    gap: 0.3rem;
+  }
+
+  .resource-demo__sla-board > div {
+    min-height: 8rem;
+    padding: 0.4rem 0.3rem;
+  }
+
+  .resource-demo__sla-board span {
+    font-size: 0.54rem;
+  }
+
+  .resource-demo__sla-board i {
+    height: 1.6rem;
+  }
+
   .security-diagram {
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: auto;
