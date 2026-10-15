@@ -8,6 +8,7 @@ import { ProblemSection } from "@/components/sections/problem-section";
 import { ResourcesSection } from "@/components/sections/resources-section";
 import { SecuritySection } from "@/components/sections/security-section";
 import { SolutionSection } from "@/components/sections/solution-section";
+import { VideoSection } from "@/components/sections/video-section";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Hero />
         <ProblemSection />
         <SolutionSection />
+        <VideoSection />
         <ResourcesSection />
         <SecuritySection />
         <FaqSection />

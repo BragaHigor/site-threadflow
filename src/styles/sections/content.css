@@ -1,3 +1,17 @@
+.product-video__player {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 3.25rem;
+  aspect-ratio: 8 / 5;
+  overflow: hidden;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-deep);
+  box-shadow: var(--shadow-dark);
+  object-fit: contain;
+}
+
 .problem {
   background: linear-gradient(180deg, var(--color-bg), var(--color-bg-deep));
 }
